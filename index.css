@@ -1,0 +1,416 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+</style>
+body{
+    margin: 20px 40px;
+}
+#body{
+    background-color:#D3C9B3;
+    height: 1000px;
+    border-radius: 16px;
+    box-sizing:border-box;
+    padding: 50px 90px;
+    display: flex;
+}
+#filter-div{
+    height: 100%;
+    width: 270px;
+    background-color: #F7F2E6;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+#Task-div{
+    height: 100%;
+    width: calc(100% - 270px - 30%);
+    background-color: #163730;
+}
+#Meeting-div{
+    height: 100%;
+    width: 30%;
+    background-color:#FFFCF9;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+#red{
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color: #FF4E48;
+    border: none;
+}
+#yellow{
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color: #FFC024;
+    border: none;
+}
+#green{
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color: #7FD320;
+    border: none;
+}
+#Buttons{
+    padding: 4px 12px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+.dots{
+    padding: 2px 2px;
+    border-radius: 50%;
+    background-color: #C2C5B6;
+    border:none;
+}
+.icons{
+    color: #2B4036;
+    margin-right: 15px;
+}
+.icon-text{
+    color: #2B4036;
+    margin-bottom: 15px;
+}
+#icon-div{
+    margin-top:50px ;
+    margin-left: 40px;
+}
+.icons1{
+    color: #BCBCB1;
+    margin-right: 15px;
+}
+#middle{
+    margin-top:50px ;
+    margin-left: 40px;
+}
+.icon0{
+    color: #F8A096;
+    margin-right: 15px;
+}
+.icon01{
+    color: #5DB79E;
+    margin-right: 15px;
+}
+.icon-text0{
+    color: #F8A096;
+    margin-bottom: 15px;
+}
+.icon-text00{
+    color: #5DB79E;
+    margin-bottom: 15px;
+}
+#end-button{
+    background-color: #FF4E48;
+    padding: 26px 26px;
+    border: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 4px 4px 10px #FF4E48;
+    margin-left: 40px;
+}
+#middle{
+    margin-bottom: 100px;
+}
+.plus{
+    color: white;
+    font-size: 15px;
+}
+#Heading{
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+}
+#Heading{
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+#Task-top{
+    padding:0px 48px;
+    height: 50px;
+    border-bottom: 1px solid #749591;
+}
+#All-button{
+    background-color:#2B584D;
+    border:none;
+    padding: 3px 8px;
+    border-radius: 12px;
+    color: #749591;
+}
+.Task-elements{
+    color: #749591;
+    margin-right: 43px;
+    font-size: 15px;
+}
+.Task-elements0{
+    color: #B4625C;
+    margin-right: 43px;
+    font-size: 15px;
+
+}
+.Check-btn{
+    padding: 4px 4px;
+    background-color: #FF4E48;
+    border: 0px;
+    border-radius: 2px;
+    margin-left: 25px;
+}
+#Task-check{
+    padding: 45px 50px; 
+}
+.Task-check-sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Task-check-sub-elements{
+    margin-right: 10px;
+}
+.tick{
+    font-size: 8px;
+    color: #385D58;
+}
+#Green-btn1{
+    background-color: #01C968;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 40px;
+    margin-top: 0px;
+    color: #385D58;
+    width:100px;
+}
+#Green-btn2{
+    background-color: #553436;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 48px;
+    margin-top: 0px;
+    color: #B9472B;
+    width:100px;
+}
+#Green-btn3{
+    background-color: #554835;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 62px;
+    margin-top: 0px;
+    color: #987928;
+    width:100px;
+}
+#Green-btn4{
+    background-color: #554835;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 64px;
+    margin-top: 0px;
+    color: #987928;
+    width:100px;
+}
+#Green-btn5{
+    background-color: #553436;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 20px;
+    margin-top: 0px;
+    color: #B9472B;
+    width:100px;
+}
+#Green-btn6{
+    background-color: #1A423C;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 60px;
+    margin-top: 0px;
+    color: #5B7674;
+    width:100px;
+}
+.Text{
+    color: #385D58;
+    margin-left: 10px;
+}
+.check-----{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+#Upcoming{
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-bottom: 40px; 
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    margin-right: 170px;
+}
+#middle3{
+    margin-top: 60px;
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #4C706B;
+}
+#Meeting-btn{
+    background-color: #E6A38A;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 12px;
+}
+.people{
+    font-size: 24px;
+    margin-left: 170px;
+    margin-right: 25px;
+}
+#Meeting-sub-div{
+    margin-top: 63px;   
+}
+#Meeting-heading{
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #24322E;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+#div1{
+    background-color: #FFF1D6;
+    width: 260px;
+    height: 150px;
+    margin-left:30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    box-sizing: border-box;
+}
+#div2{
+    background-color: #FFD8DA;
+    width: 260px;
+    height: 150px;
+    margin-left:30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    box-sizing: border-box;
+}
+#div3{
+    background-color: #D0E5FE;
+    width: 260px;
+    height: 150px;
+    margin-left:30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    box-sizing: border-box;
+}
+#div4{
+    background-color: #D8FFE2;
+    width: 260px;
+    height: 150px;
+    margin-left:30px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    box-sizing: border-box;
+}
+pre{
+    margin: 1px;
+}
+#Green-btn01{
+    background-color: #1A423C;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 22px;
+    margin-top: 0px;
+    color: #5B7674;
+    width:100px;
+}
+.Green-btn02{
+    background-color: #1A423C;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 60px;
+    margin-top: 0px;
+    color: #5B7674;
+    width:100px;
+}
+#Green-btn03{
+    background-color: #1A423C;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 14px;
+    margin-left: 22px;
+    margin-top: 0px;
+    color: #5B7674;
+    width:100px;
+}
+#people-btn{
+    background-color: #E6A38A;
+    border: none;
+    padding:8px 14px;
+    border-radius: 6px;
+   
+}
+#icon-div1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top:60px;
+    box-sizing: border-box;
+}
+.people{
+    padding-left: 30px;
+}
+.a-div{
+    margin-left: 25px;
+}
+.vdots{
+    margin-left: 100px;
+}
+.Inner-div{
+    padding: 20px 10px;
+}
+.Meetings{
+    margin-left:10px ;
+}
+.User-icons{
+    display: flex;
+    padding:20px 14px;
+}
+.icn{
+    width:20px;
+    margin-right: 5px;
+}
+#Joined{
+    border: none;
+    border-radius: 16px;
+    padding: 8px 14px; 
+    margin-left: 16px;
+}
+.Tick1{
+    margin-right: 8px;
+}
+#Members13{
+    border: none;
+    border-radius: 16px;
+    padding: 8px 14px; 
+    margin-left: 16px;
+}
+.lus{
+    font-size: 10px;
+    margin-right: 2px;
+}
